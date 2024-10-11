@@ -1,0 +1,70 @@
+/* * Estilos generales y variables CSS | base.css */
+/* Uso de fuente variable */
+@font-face {
+    font-family: 'Figtree';
+    src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+    font-weight: 400 800;
+}
+
+:root {
+    /* Colores */
+    --color-yellow:     hsl(47, 88%, 63%);
+    --color-white:      hsl(0, 0%, 100%);
+    --color-gray-500:   hsl(0, 0%, 42%);
+    --color-gray-950:   hsl(0, 0%, 7%);
+
+    /* Tipografía */
+    /* 1rem = 10px, establecemos el font-size base en 62.5% del valor por defecto del navegador (16px) */
+    --font-size: 62.5%;
+    --font-main: 'Figtree', sans-serif;
+    --font-weight-regular: 300;
+    --font-weight-medium: 500;
+    --font-weight-extra-bold: 800;
+
+    /* Espaciado */
+    --space-200: 1.6rem;
+    --space-150: 1.2rem;
+    --space-100: 0.8rem;
+    --space-50: 0.4rem;
+
+    /* Tamaños de contenedores */
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+.text-preset-1 {
+    font-weight: var(--font-weight-extra-bold);
+    font-size: 2.4rem;
+    line-height: 150%;
+}
+
+.text-preset-2 {
+    font-weight: var(--font-weight-medium);
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+
+.text-preset-3 {
+    font-weight: var(--font-weight-medium);
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+.text-preset-3--bold {
+    font-weight: var(--font-weight-extra-bold);
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+/* * Layout principal (grid, flexbox) | layout.css */
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-regular);
+}
+
+/* * Estilos de componentes (botones, formularios, tarjetas, etc.) | components.css */
+
+/* * Media queries para pantallas más grandes | responsive.css */
